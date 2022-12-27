@@ -7,18 +7,23 @@ box-sizing: border-box;
 html
 {
   box-shadow: 0px 0px  1000px #fbaed2 inset;
+  transition:  box-shadow 0s ease-in-out;
+  transition-duration: 2s;
+overflow:auto;
 }
 body
 {
-background:grey;
-margin: 20%;
+position:relative;
 background-color:transparent;
+height: 100vh;
+
 }
 #outercontainer
 {
 display: flex;
 text-align: center;
-justify-content: center;
+justify-content:center;
+
 }
 
 #icon
@@ -28,7 +33,6 @@ width:200px;
 height: 200px;
 background-position: center;
 background-size:cover;
-
 position: absolute;
 left: 50%;
 transform: translate(-50%);
@@ -39,6 +43,9 @@ height: 500px;
 width: 500px;
 text-align: center;
 box-shadow: 3px 3px 11px purple  ;
+position: absolute;
+top:50%;
+transform: translate(0,-50%);
 }
 #timedisplay
 {
@@ -76,4 +83,10 @@ button:focus
 }
 #reset{
   border-left: 2px purple solid;
+}
+@media  screen and (max-width:1200px) ,(max-height:900px) {
+  html{
+box-shadow:none;
+
+  }
 }
