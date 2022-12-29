@@ -46,6 +46,10 @@ box-shadow: 3px 3px 11px purple  ;
 position: absolute;
 top:50%;
 transform: translate(0,-50%);
+animation-name:changeclr;
+animation-duration: 8s;
+animation-timing-function:ease-in-out;
+animation-iteration-count: infinite;
 }
 #timedisplay
 {
@@ -89,4 +93,11 @@ button:focus
 box-shadow:none;
 
   }
+}
+@keyframes changeclr {
+  20%{ box-shadow: 3px 3px 15px red  ; }
+    30%{ box-shadow: 3px 3px 15px orange ; }
+      50%{ box-shadow: 3px 3px 15px yellow   ; }
+          70%{ box-shadow: 3px 3px 13px pink ; }
+          90%{box-shadow: 3px 3px 11px purple;}
 }
